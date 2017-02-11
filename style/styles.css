@@ -1,0 +1,19 @@
+*{
+  background-color:darkgray;
+  border:1px solid red;
+}
+.wrapper{
+  width:100%;
+  max-width:900px;
+}
+header h1{
+  text-align:center;
+}
+div.row2{
+  display:inline-block;
+  width:25%;
+  height:200px;
+  margin-left:6%;
+  margin-top:25px;
+  margin-bottom:25px;
+}
