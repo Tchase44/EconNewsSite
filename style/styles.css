@@ -43,3 +43,29 @@ a{
   margin-bottom: 0px;
   bottom: 0px;
 }
+@media only screen and (max-width: 865px){
+  .row2{
+    width: 40%;
+  }
+
+}
+@media only screen and (max-width: 680px){
+  header{
+    display: block;
+  }
+  button{
+    width: 100%;
+    height: 54px;
+    font-size: x-large;
+  }
+  main{
+    width: 100%;
+    padding: 15px;
+  }
+  .row2{
+    width: 95%;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: 0px;
+  }
+}
