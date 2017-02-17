@@ -42,6 +42,11 @@ a{
   position: absolute;
   margin-bottom: 0px;
   bottom: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 @media only screen and (max-width: 935px){
   .row2{
