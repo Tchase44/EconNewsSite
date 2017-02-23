@@ -7,19 +7,14 @@ div#wrapper{
   margin-right:auto;
 }
 #titles,#btns{
-  border:1px solid green;
   box-sizing: border-box;
   width: 100%;
   padding: 10px;
 }
 #titles{
+  border:1px solid green;
   height: 50px;
-}
-#titles h1{
-  display: inline;
-  margin:0;
-  padding: 10px;
-  text-align:center;
+  text-align: center;
 }
 #n{
   width: 33%;
@@ -85,19 +80,23 @@ a{
   -webkit-line-clamp: 3;
 }
 #tt{
-  text-align: center;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  display: inline;
+  position: initial;
   text-decoration: none;
   color: black;
-  font-size: 10pt;
+  margin-top: 19px;
+
 }
 
 @media only screen and (max-width: 935px){
   .row2{
     width: 40%;
   }
-
+  #tt{
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 680px){
   header{
@@ -108,6 +107,9 @@ a{
     height: 60px;
     font-size: x-large;
   }
+  #tfz{
+    font-size: 17pt;
+  }
   main{
     width: 100%;
     padding: 15px;
@@ -117,5 +119,8 @@ a{
     background-size: cover;
     margin-left: auto;
     margin-right: 0px;
+  }
+  #tt{
+    text-align: center;
   }
 }
