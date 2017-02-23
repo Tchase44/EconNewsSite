@@ -1,13 +1,5 @@
 
 $(document).ready(function(){
-	// Trump filter
-var exists = function (content, q) {
-	var result = content.split(" ").filter(function(item) {
-       return item.toLowerCase() === q.toLowerCase(); 
-   	});
-    return result.length > 0;
-};
-
 
 	loadReading();
 // function to load trumpfreezone
@@ -20,7 +12,7 @@ var exists = function (content, q) {
 		loadNewest();
 	})
 	// $('').click(function(){
-		// post trump free news
+		// loadTrumpFreeZone();
 	// })
 // });
 
@@ -149,8 +141,15 @@ $.getJSON(url+'source='+nw+'&sortBy='+sortNew+'&'+keys,function(data){
 		$('#img12 p').text( "(newsweek)"+data.articles[1].description);
 		$('#img12').css('background-image','url('+data.articles[1].urlToImage+')');
 	});
-}
+};
 // });
+	// Trump filter
+var exists = function (content, q) {
+	var result = content.split(" ").filter(function(item) {
+       return item.toLowerCase() === q.toLowerCase(); 
+   	});
+    return result.length > 0;
+};
 
 var loadTrumpFreeZone = function(){
 	$('#img10,#img11,#img12').css('background-image',"none");
