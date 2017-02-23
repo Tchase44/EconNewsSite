@@ -53,6 +53,10 @@ a{
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
 }
+#tt{
+  text-decoration: none;
+  color: black;
+}
 @media only screen and (max-width: 935px){
   .row2{
     width: 40%;
