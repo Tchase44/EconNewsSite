@@ -1,20 +1,7 @@
 
 $(document).ready(function(){
 
-	loadReading();
-// function to load trumpfreezone
-	$('#t').click(function(){
-		
-		loadReading();
-	});
-	$('#n').click(function(){
 
-		loadNewest();
-	})
-	// $('').click(function(){
-		// loadTrumpFreeZone();
-	// })
-// });
 
 
 var loadReading = function(){
@@ -296,4 +283,19 @@ var loadTrumpFreeZone = function(){
 		$('#img9').css("background-image",'url('+trumpFreeZone[0].urlToImage+')');
 	});	
 };
+
+	 loadReading();
+// function to load trumpfreezone
+	$('#t').click(function(){
+		
+		loadReading();
+	});
+	$('#n').click(function(){
+
+		loadNewest();
+	})
+	// $('').click(function(){
+		// loadTrumpFreeZone();
+	// })
+// });
 });
