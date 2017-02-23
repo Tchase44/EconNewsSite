@@ -6,8 +6,39 @@ div#wrapper{
   margin-left:auto;
   margin-right:auto;
 }
-header h1{
+#titles,#btns{
+  border:1px solid green;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+}
+#titles{
+  height: 50px;
+}
+#titles h1{
+  display: inline;
+  margin:0;
+  padding: 10px;
   text-align:center;
+}
+#n{
+  width: 33%;
+  display: inline-block;
+  float: left;
+}
+#tfz{
+  width: 33%;
+  display: inline-block;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}
+#t{
+  width: 33%;
+  display: inline-block;
+  float: right;
+}
+button{
+  height: 40px;
 }
 main{
   box-sizing: border-box;
@@ -54,9 +85,14 @@ a{
   -webkit-line-clamp: 3;
 }
 #tt{
+  text-align: center;
+  padding: 0;
+  margin: 0;
   text-decoration: none;
   color: black;
+  font-size: 10pt;
 }
+
 @media only screen and (max-width: 935px){
   .row2{
     width: 40%;
@@ -68,8 +104,8 @@ a{
     display: block;
   }
   button{
-    width: 100%;
-    height: 54px;
+    width: 33%;
+    height: 60px;
     font-size: x-large;
   }
   main{

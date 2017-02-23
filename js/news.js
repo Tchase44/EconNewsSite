@@ -265,7 +265,7 @@ var loadTrumpFreeZone = function(){
 			};
 		};
 		$('#img8 a').text(trumpFreeZone[0].title).attr("href",trumpFreeZone[0].url);
-		$("#img8 p").text("(AP)"+trumpFreeZone[0].description);
+		$("#img8 p").text(trumpFreeZone[0].description);
 		$('#img8').css("background-image",'url('+trumpFreeZone[0].urlToImage+')');
 	});
 	$.getJSON(url+'source='+nw+'&sortBy='+sortTop+'&'+keys,function(data){
@@ -293,9 +293,9 @@ var loadTrumpFreeZone = function(){
 	$('#n').click(function(){
 
 		loadNewest();
-	})
-	// $('').click(function(){
-		// loadTrumpFreeZone();
-	// })
+	});
+	$('#tfz').click(function(){
+		loadTrumpFreeZone();
+	});
 // });
 });
